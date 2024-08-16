@@ -13,9 +13,10 @@ def get_autores():
     ]
 
 def get_livros():
+    lista_autores_sistema = get_autores()
     return [
         Livro(
-            lista_autor=[get_autores()[0]],
+            lista_autor=[lista_autores_sistema[0]],
             titulo='The StatQuest Illustrated Guide to Machine Learning!!!',
             editora='Packt Publishing',
             lista_genero=['Machine Learning','Statiscs'],
@@ -23,7 +24,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[get_autores()[1]],
+            lista_autor=[lista_autores_sistema[1]],
             titulo='Python Fluente: Programação Clara, Concisa e Eficaz',
             editora='Novatec',
             lista_genero=['Programação'],
@@ -31,7 +32,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[get_autores()[2]],
+            lista_autor=[lista_autores_sistema[2]],
             titulo='Código Limpo: Habilidades Práticas do Agile',
             editora='Alta Books',
             lista_genero=['Computação','Informática'],
@@ -39,7 +40,7 @@ def get_livros():
             max_renovacao=2
         ),
         Livro(
-            lista_autor=[get_autores()[3]],
+            lista_autor=[lista_autores_sistema[3]],
             titulo='Introdução à Programação com Python',
             editora='Novatec',
             lista_genero=['Computação', 'Informática'],
@@ -47,7 +48,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[get_autores()[4], get_autores()[5], get_autores()[6]],
+            lista_autor=[lista_autores_sistema[4:7]],
             titulo='Algoritmos e Programação de Computadores',
             editora='GEN LTC',
             lista_genero=['Computação', 'Informática', 'Mídias Digitais'],
