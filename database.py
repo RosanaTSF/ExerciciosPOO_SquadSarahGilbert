@@ -9,7 +9,10 @@ def get_autores():
         Autor(nome='Nilo Ney Coutinho', email='neycoutinho@gmail.com'),
         Autor(nome='An Engelbrecht', email='anengelbrecht@gmail.com'),
         Autor(nome='Gilberto Nakamiti', email='gilbertonakamiti@gmail.com'),
-        Autor(nome='Dilermando Junior', email='dilermandojr@gmail.com')
+        Autor(nome='Dilermando Junior', email='dilermandojr@gmail.com'),
+        Autor(nome='Henrique Bastos', email='henriquebastos@gmail.com'),
+        Autor(nome='Eric Evans', email='ericevans@gmail.com'),
+        Autor(nome='Martin Fowler', email='martinfowler@gmail.com')
     ]
 
 def get_livros():
@@ -54,5 +57,29 @@ def get_livros():
             lista_genero=['Computação', 'Informática', 'Mídias Digitais'],
             lista_exemplar=['#01', '#02', '#03'],
             max_renovacao=2
+        ),
+        Livro(
+            lista_autor=[lista_autores_sistema[7]],
+            titulo='Python para Data Science',
+            editora='Alta Books',
+            lista_genero=['Ciência de Dados', 'Python', 'Machine Learning'],
+            lista_exemplar=['#01', '#02', '#03'],
+            max_renovacao=3
+        ),
+        Livro(
+            lista_autor=[lista_autores_sistema[8]],
+            titulo='Domain-Driven Design: Desenvolvendo Software com Modelos de Domínio',
+            editora='Casa do Código',
+            lista_genero=['Arquitetura de Software', 'Design Patterns'],
+            lista_exemplar=['#01'],
+            max_renovacao=1
+        ),
+        Livro(
+            lista_autor=[lista_autores_sistema[9]],
+            titulo='Refactoring: Melhorando o Design de Código Existente',
+            editora='Addison-Wesley',
+            lista_genero=['Programação', 'Engenharia de Software'],
+            lista_exemplar=['#01', '#02', '#03'],
+            max_renovacao=3
         )
     ]
