@@ -4,14 +4,15 @@ import random
 
 rd = random.Random()
 rd.seed(123)
+
 class Pessoa(ABC):
-    def __init__(self, id, nome: str, email: str):
+    def __init__(self, nome: str, email: str):
         self.__id = str(uuid.UUID(int=rd.getrandbits(128), version=4))
         self._nome = nome
         self.email = email
 
     def __str__(self) -> str:
-        return f"Nome: {self.nome} | E-mail: {self.email}"
+        return f"ID: {self.__id} | Nome: {self.nome} | E-mail: {self.email}"
     
     @property
     def id(self):
