@@ -6,13 +6,13 @@ rd = random.Random()
 rd.seed(123)
 
 class Pessoa(ABC):
-    def __init__(self, nome: str, email: str):
+    def __init__(self, nome: str, email_teste: str):
         self.__id = str(uuid.UUID(int=rd.getrandbits(128), version=4))
         self._nome = nome
-        self.email = email
+        self.email = email_teste
 
     def __str__(self) -> str:
-        return f"ID: {self.__id} | Nome: {self.nome} | E-mail: {self.email}"
+        return f"Nome: {self.nome} | E-mail: {self.email}"
     
     @property
     def id(self):
@@ -22,10 +22,10 @@ class Pessoa(ABC):
     def nome(self):
         return self._nome
     
-    @property
-    def email(self):
-        return self.email
+    # @property
+    # def email(self):
+    #     return self.email
     
-    @email.setter #importante caso a pessoa tenha mudado de email - recadastro
-    def email(self, novo_email): 
-        self.email = novo_email
+    # @email.setter #importante caso a pessoa tenha mudado de email - recadastro
+    # def email(self, novo_email): 
+    #     self.email = novo_email

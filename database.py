@@ -31,7 +31,7 @@ def get_livros():
     lista_autores_sistema = get_autores()
     return [
         Livro(
-            lista_autor=[lista_autores_sistema[0]],
+            lista_autor=[lista_autores_sistema[0].__str__()],
             titulo='The StatQuest Illustrated Guide to Machine Learning!!!',
             editora='Packt Publishing',
             lista_genero=['Machine Learning','Statiscs'],
@@ -39,7 +39,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[1]],
+            lista_autor=[lista_autores_sistema[1].__str__()],
             titulo='Python Fluente: Programação Clara, Concisa e Eficaz',
             editora='Novatec',
             lista_genero=['Programação'],
@@ -47,7 +47,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[2]],
+            lista_autor=[lista_autores_sistema[2].__str__()],
             titulo='Código Limpo: Habilidades Práticas do Agile',
             editora='Alta Books',
             lista_genero=['Computação','Informática'],
@@ -55,7 +55,7 @@ def get_livros():
             max_renovacao=2
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[3]],
+            lista_autor=[lista_autores_sistema[3].__str__()],
             titulo='Introdução à Programação com Python',
             editora='Novatec',
             lista_genero=['Computação', 'Informática'],
@@ -63,7 +63,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[4:7]],
+            lista_autor=[lista_autores_sistema[4].__str__(), lista_autores_sistema[5].__str__(), lista_autores_sistema[6].__str__()],
             titulo='Algoritmos e Programação de Computadores',
             editora='GEN LTC',
             lista_genero=['Computação', 'Informática', 'Mídias Digitais'],
@@ -71,7 +71,7 @@ def get_livros():
             max_renovacao=2
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[7]],
+            lista_autor=[lista_autores_sistema[7].__str__()],
             titulo='Python para Data Science',
             editora='Alta Books',
             lista_genero=['Ciência de Dados', 'Python', 'Machine Learning'],
@@ -79,7 +79,7 @@ def get_livros():
             max_renovacao=3
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[8]],
+            lista_autor=[lista_autores_sistema[8].__str__()],
             titulo='Domain-Driven Design: Desenvolvendo Software com Modelos de Domínio',
             editora='Casa do Código',
             lista_genero=['Arquitetura de Software', 'Design Patterns'],
@@ -87,7 +87,7 @@ def get_livros():
             max_renovacao=1
         ),
         Livro(
-            lista_autor=[lista_autores_sistema[9]],
+            lista_autor=[lista_autores_sistema[9].__str__()],
             titulo='Refactoring: Melhorando o Design de Código Existente',
             editora='Addison-Wesley',
             lista_genero=['Programação', 'Engenharia de Software'],

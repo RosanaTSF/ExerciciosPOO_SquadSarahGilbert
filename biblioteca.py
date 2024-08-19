@@ -54,7 +54,7 @@ class Biblioteca:
             print("ID não encontrado")
         else:
             user = self.usuarios[idx]
-            user.nome = nome
+            user._nome = nome
             user.telefone = telefone
             user.nacionalidade = nacionalidade
             self.usuarios[idx] = user
