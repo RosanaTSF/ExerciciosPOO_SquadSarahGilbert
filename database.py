@@ -1,5 +1,17 @@
-from Livro import Livro
-from Autor import Autor
+from livro import Livro
+from autor import Autor
+from usuario import Usuario
+
+def get_usuarios():
+    return [
+        Usuario("Jéssica Lizar", "jessicalizar@gmail.com", "12345678910", "Brasileira"),
+        Usuario("Letícia Almeida", "leticiaalmeida@gmail.com", "10987654321", "Brasileira"),
+        Usuario("Lívia Boscolo", "liviaboscolo@gmail.com", "12345109876", "Brasileira"),
+        Usuario("Michelle Martins", "michellemartins@gmail.com", "10987612345", "Brasileira"),
+        Usuario("Nadiveth Duno", "nadivethduno@gmail.com", "678910123456", "Venezuelana"),
+        Usuario("Raquel Maia", "raquelmaaia@gmail.com", "54321109876", "Brasileira"),
+        Usuario("Rosana Francisco", "rosanafrancisco@gmail.com", "54321678923", "Brasileira")
+    ]
 
 def get_autores():
     return [
