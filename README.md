@@ -22,8 +22,8 @@ Abaixo se encontra tabela com as responsáveis e sua(s) respectiva(s) classe(s):
 
 | Integrantes da Equipe  | Classe(s)| Status |
 | ------------- | ------------- | ------------- |
-| Letícia Almeida | classe Pessoa | classe Autor | ✅
-| Lívia Boscolo | classe Usuário | classe Empréstimo  | ✅
+| Letícia Almeida | classe Pessoa e Autor | ✅
+| Lívia Boscolo | classe Usuário e Empréstimo  | ✅
 | Michelle Martins da Costa | classe Biblioteca | ✅
 | Nadi Duno | classe Biblioteca | ✅
 | Raquel de Oliveira Maia | classe Livro | ✅
@@ -37,4 +37,4 @@ Abaixo se encontra tabela com as responsáveis e sua(s) respectiva(s) classe(s):
 
 * O nome do arquivo da classe deve ser iniciado com o primeiro caractere maiúsculo;
 * Evitar caracteres especiais;
-* Adicionar a extensão ".py" ao nome do arquivo
+* Adicionar a extensão ".py" ao nome do arquivo.
