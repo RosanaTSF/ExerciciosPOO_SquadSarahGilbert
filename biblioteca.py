@@ -6,7 +6,7 @@ class Biblioteca:
         self._exemplares=livros
         self._usuarios=usuarios
         self.dict_emprestimos = {}
-        
+
     @property
     def livros(self):
         return self._livros
@@ -91,9 +91,6 @@ class Biblioteca:
 
         idx = self.search_livro_user_idx(livro.id)
         self._exemplares[idx].lista_exemplar.append(exemplar)
-
-
-
 
 
 
